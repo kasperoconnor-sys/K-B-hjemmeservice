@@ -64,9 +64,9 @@ footer{background:#0b3d3b;color:#fff;text-align:center;padding:20px;margin-top:3
 <p>📞 97336146</p>
 <p>📧 kasperoconnor@gmail.com</p>
 <form action="https://formspree.io/f/mzdnnaeb" method="POST">
-<input placeholder="Navn">
-<input placeholder="Telefon">
-<textarea rows="5" placeholder="Hva trenger du hjelp med?"></textarea>
+<input type="text" name="Navn" placeholder="Navn" required>
+<input type="tel" name="Telefon" placeholder="Telefon" required>
+<textarea name="Melding" placeholder="Hva trenger du hjelp med?" required></textarea>
 <button type="submit">Send forespørsel</button>
 </form>
 <p><small>Kontaktskjemaet er en designmal. For at det skal sende meldinger automatisk må vi koble det til en tjeneste senere.</small></p>
