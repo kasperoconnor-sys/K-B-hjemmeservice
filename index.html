@@ -14,57 +14,60 @@
 
 body {
     margin: 0;
-    background: #f6f7fb;
-    color: #222;
+    background: #f4f8f4;
+    color: #1f2937;
 }
 
 header {
-    background: #0f172a;
+    background: #166534;
     color: white;
-    padding: 50px 20px;
     text-align: center;
+    padding: 55px 20px;
 }
 
 header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 42px;
+    margin: 0;
 }
 
 header p {
     font-size: 18px;
+    max-width: 600px;
+    margin: 15px auto;
 }
 
-.btn {
+.button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #2563eb;
-    color: white;
+    background: white;
+    color: #166534;
+    padding: 14px 28px;
+    border-radius: 12px;
     text-decoration: none;
-    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 section {
     max-width: 900px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 25px 15px;
 }
 
 .card {
     background: white;
-    padding: 25px;
     border-radius: 18px;
+    padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 h2 {
-    color: #0f172a;
+    color: #166534;
 }
 
 .service {
+    border-bottom: 1px solid #e5e7eb;
     padding: 15px 0;
-    border-bottom: 1px solid #ddd;
 }
 
 .service:last-child {
@@ -72,45 +75,44 @@ h2 {
 }
 
 .price {
-    color: #2563eb;
+    color: #166534;
     font-weight: bold;
 }
 
-.note {
-    font-size: 14px;
+.info {
     color: #555;
+    font-size: 14px;
 }
 
 input, textarea, select {
     width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border-radius: 10px;
     border: 1px solid #ccc;
 }
 
 textarea {
-    height: 130px;
+    height: 120px;
 }
 
 button {
     width: 100%;
     padding: 15px;
-    background: #2563eb;
+    background: #166534;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 footer {
-    background: #0f172a;
+    background: #166534;
     color: white;
     text-align: center;
     padding: 25px;
 }
-
 </style>
 
 </head>
@@ -129,7 +131,7 @@ Rimelig, pålitelig og lokal hjelp i Holmestrand.
 Vi hjelper deg med bilvask, hagearbeid, snømåking og andre småjobber.
 </p>
 
-<a class="btn" href="#bestill">Bestill oppdrag</a>
+<a class="button" href="#bestill">Bestill oppdrag</a>
 
 <p>✔️ Gratis og uforpliktende forespørsel</p>
 
@@ -151,7 +153,7 @@ Utvendig fra 250 kr<br>
 Innvendig fra 300 kr<br>
 Komplett fra 500 kr
 </p>
-<p>Prisen kan variere avhengig av bilens størrelse og hvor skitten den er.</p>
+<p>Prisen kan variere etter bilens størrelse og hvor skitten den er.</p>
 </div>
 
 
@@ -165,7 +167,7 @@ Komplett fra 500 kr
 <div class="service">
 <h3>❄️ Snømåking</h3>
 <p class="price">Fra 100 kr</p>
-<p>Prisen avhenger av området. Vi kan også strø salt ved behov.</p>
+<p>Pris avhenger av området. Vi kan også strø salt ved behov.</p>
 </div>
 
 
@@ -179,7 +181,7 @@ Komplett fra 500 kr
 <div class="service">
 <h3>🪵 Stable ved</h3>
 <p class="price">Fra 150 kr</p>
-<p>Prisen varierer ut fra mengden ved.</p>
+<p>Prisen varierer etter mengden ved.</p>
 </div>
 
 
@@ -203,16 +205,15 @@ Under 500 kr: 100 kr<br>
 <div class="service">
 <h3>🔧 Andre småjobber</h3>
 <p>
-Trenger du hjelp med noe som ikke står på listen?
-Ta kontakt – vi hjelper gjerne hvis vi kan!
+Ta kontakt hvis du trenger hjelp med noe annet.
+Vi hjelper gjerne hvis vi kan!
 </p>
 </div>
 
 
-<p class="note">
+<p class="info">
 Alle priser er veiledende startpriser. Endelig pris avtales alltid før vi starter jobben.
 </p>
-
 
 </div>
 
@@ -260,11 +261,12 @@ Bilder kommer snart...
 <h2>Bestill oppdrag</h2>
 
 <p>
-Fyll ut skjemaet under, så svarer vi så fort vi kan.
+Send inn en gratis og uforpliktende forespørsel.
 </p>
 
 
 <form action="https://formspree.io/f/mzdnnaeb" method="POST">
+
 
 <label>Navn</label>
 <input type="text" name="navn" required>
@@ -285,14 +287,14 @@ Fyll ut skjemaet under, så svarer vi så fort vi kan.
 <option>Stable ved</option>
 <option>Handling</option>
 <option>Fjerne småstein</option>
-<option>Annet</option>
+<option>Andre småjobber</option>
 
 </select>
 
 
 <label>Beskrivelse av jobben</label>
 
-<textarea name="melding"></textarea>
+<textarea name="melding" placeholder="Skriv litt om hva du trenger hjelp med..."></textarea>
 
 
 <button type="submit">
@@ -314,7 +316,6 @@ Send forespørsel
 <p>Holmestrand</p>
 
 </footer>
-
 
 </body>
 </html>
