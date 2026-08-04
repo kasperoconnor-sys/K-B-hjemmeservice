@@ -2,79 +2,319 @@
 <html lang="no">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>K&B Hjemmeservice | Holmestrand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>K&B Hjemmeservice</title>
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7f8;color:#222}
-header{background:linear-gradient(135deg,#0b3d3b,#2e8b57);color:#fff;padding:70px 20px;text-align:center}
-.container{max-width:1000px;margin:auto;padding:24px}
-.btn{display:inline-block;background:#2e8b57;color:#fff;padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-section{padding:20px 0}
-h2{text-align:center;color:#0b3d3b}
-.price{font-weight:bold;color:#2e8b57}
-form input,form textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
-form button{background:#0b3d3b;color:#fff;border:none;padding:14px 20px;border-radius:8px}
-footer{background:#0b3d3b;color:#fff;text-align:center;padding:20px;margin-top:30px}
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f6f7fb;
+    color: #222;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #0f172a;
+}
+
+.service {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.service:last-child {
+    border-bottom: none;
+}
+
+.price {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 130px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
 </style>
+
 </head>
+
 <body>
+
 <header>
+
 <h1>K&B Hjemmeservice</h1>
-<p>Pålitelig hjelp i Holmestrand fra to lokale 14-åringer.</p>
-<a class="btn" href="tel:97336146">📞 Ring oss</a>
-<a class="btn" href="mailto:kasperoconnor@gmail.com">📧 Send e-post</a>
+
+<p>
+Rimelig, pålitelig og lokal hjelp i Holmestrand.
+</p>
+
+<p>
+Vi hjelper deg med bilvask, hagearbeid, snømåking og andre småjobber.
+</p>
+
+<a class="btn" href="#bestill">Bestill oppdrag</a>
+
+<p>✔️ Gratis og uforpliktende forespørsel</p>
+
 </header>
 
-<div class="container">
+
 <section>
+
+
+<div class="card">
+
 <h2>Våre tjenester</h2>
-<div class="grid">
-<div class="card"><h3>🚗 Bilvask</h3><p>Innvendig, utvendig eller komplett vask.</p></div>
-<div class="card"><h3>🌱 Gressklipping</h3><p>Ryddig plen gjennom hele sesongen.</p></div>
-<div class="card"><h3>❄️ Snømåking</h3><p>Innkjørsler, trapper og gårdsplasser.</p></div>
-<div class="card"><h3>🍂 Hagearbeid</h3><p>Løv, rydding og småjobber.</p></div>
-</div>
-</section>
 
-<section>
-<h2>Priser</h2>
+
+<div class="service">
+<h3>🚗 Bilvask</h3>
+<p class="price">
+Utvendig fra 250 kr<br>
+Innvendig fra 300 kr<br>
+Komplett fra 500 kr
+</p>
+<p>Prisen kan variere avhengig av bilens størrelse og hvor skitten den er.</p>
+</div>
+
+
+<div class="service">
+<h3>🌱 Gressklipping</h3>
+<p class="price">Fra 100 kr</p>
+<p>Prisen varierer ut fra størrelsen på plenen.</p>
+</div>
+
+
+<div class="service">
+<h3>❄️ Snømåking</h3>
+<p class="price">Fra 100 kr</p>
+<p>Prisen avhenger av området. Vi kan også strø salt ved behov.</p>
+</div>
+
+
+<div class="service">
+<h3>🪴 Vanning av planter</h3>
+<p class="price">250 kr per uke</p>
+<p>Perfekt når du er bortreist.</p>
+</div>
+
+
+<div class="service">
+<h3>🪵 Stable ved</h3>
+<p class="price">Fra 150 kr</p>
+<p>Prisen varierer ut fra mengden ved.</p>
+</div>
+
+
+<div class="service">
+<h3>🛒 Handling</h3>
+<p class="price">
+Under 500 kr: 100 kr<br>
+500–999 kr: 150 kr<br>
+1000 kr+: 200 kr
+</p>
+</div>
+
+
+<div class="service">
+<h3>🧹 Fjerne småstein</h3>
+<p class="price">Fra 150 kr</p>
+<p>Utføres med høytrykksspyler. Pris varierer etter området.</p>
+</div>
+
+
+<div class="service">
+<h3>🔧 Andre småjobber</h3>
+<p>
+Trenger du hjelp med noe som ikke står på listen?
+Ta kontakt – vi hjelper gjerne hvis vi kan!
+</p>
+</div>
+
+
+<p class="note">
+Alle priser er veiledende startpriser. Endelig pris avtales alltid før vi starter jobben.
+</p>
+
+
+</div>
+
+
+
 <div class="card">
-<p class="price">Bilvask fra 150 kr</p>
-<p class="price">Komplett bilvask fra 300 kr</p>
-<p class="price">Gressklipping fra 250 kr</p>
-<p class="price">Snømåking fra 200 kr</p>
-<p>Endelig pris avtales før vi starter.</p>
-</div>
-</section>
 
-<section>
 <h2>Om oss</h2>
-<div class="card">
-<p>Vi heter Kasper og Bendik og er to 14-åringer fra Holmestrand.</p>
-<p>Vi er skoleflinke gutter med god orden og oppførsel. Vi møter opp til avtalt tid, jobber grundig og gjør vårt beste for at kundene skal bli fornøyde.</p>
-<p>Vi kommer som regel med eget utstyr og tilbyr bilvask, gressklipping, snømåking, hagearbeid og andre småjobber.</p>
-</div>
-</section>
 
-<section>
-<h2>Kontakt oss</h2>
+<p>
+Vi heter Kasper og Bendik og er to 14-åringer fra Holmestrand.
+Vi er punktlige, arbeidsomme og opptatt av å gjøre en god jobb.
+</p>
+
+</div>
+
+
+
 <div class="card">
-<p>📞 97336146</p>
-<p>📧 kasperoconnor@gmail.com</p>
-<form action="https://formspree.io/f/mzdnnaeb" method="POST" target="_blank">
-<input type="hidden" name="_next" value="https://kasperoconnor-sys.github.io/K-B-hjemmeservice/takk.html">
-<input type="text" name="Navn" placeholder="Navn" required>
-<input type="tel" name="Telefon" placeholder="Telefon" required>
-<textarea name="Melding" placeholder="Hva trenger du hjelp med?" required></textarea>
-<button type="submit">Send forespørsel</button>
+
+<h2>Kundeanmeldelser</h2>
+
+<p>
+Kundeanmeldelser kommer snart...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Bilder fra jobber</h2>
+
+<p>
+Bilder kommer snart...
+</p>
+
+</div>
+
+
+
+<div class="card" id="bestill">
+
+<h2>Bestill oppdrag</h2>
+
+<p>
+Fyll ut skjemaet under, så svarer vi så fort vi kan.
+</p>
+
+
+<form action="https://formspree.io/f/mzdnnaeb" method="POST">
+
+<label>Navn</label>
+<input type="text" name="navn" required>
+
+
+<label>Telefon eller e-post</label>
+<input type="text" name="kontakt" required>
+
+
+<label>Hva trenger du hjelp med?</label>
+
+<select name="tjeneste">
+
+<option>Bilvask</option>
+<option>Gressklipping</option>
+<option>Snømåking</option>
+<option>Vanning av planter</option>
+<option>Stable ved</option>
+<option>Handling</option>
+<option>Fjerne småstein</option>
+<option>Annet</option>
+
+</select>
+
+
+<label>Beskrivelse av jobben</label>
+
+<textarea name="melding"></textarea>
+
+
+<button type="submit">
+Send forespørsel
+</button>
+
+
 </form>
-<p><small>Kontaktskjemaet er en designmal. For at det skal sende meldinger automatisk må vi koble det til en tjeneste senere.</small></p>
-</div>
-</section>
+
 </div>
 
-<footer>© K&B Hjemmeservice – Holmestrand</footer>
+
+</section>
+
+
+<footer>
+
+<p>K&B Hjemmeservice</p>
+<p>Holmestrand</p>
+
+</footer>
+
+
 </body>
 </html>
