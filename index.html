@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>K&B Bilpleie</title>
+<title>K&B Bilpleie | Profesjonell bilpleie i Holmestrand</title>
 
 <style>
 
@@ -12,12 +13,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
 background:#061426;
 color:white;
+line-height:1.6;
 }
 
 html{
@@ -25,9 +27,15 @@ scroll-behavior:smooth;
 }
 
 .hero{
+
 height:100vh;
+min-height:600px;
+
 background:
-linear-gradient(rgba(6,20,38,.75),rgba(6,20,38,.95)),
+linear-gradient(
+rgba(6,20,38,.75),
+rgba(6,20,38,.95)
+),
 url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
 
 background-size:cover;
@@ -38,168 +46,330 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:20px;
+
 }
 
 
 .hero h1{
-font-size:55px;
+
+font-size:60px;
 margin-bottom:20px;
+
 }
 
 
 .hero p{
-font-size:20px;
-max-width:700px;
+
+font-size:21px;
+max-width:750px;
 color:#ddd;
+
 }
 
 
 .btn{
+
 display:inline-block;
-margin-top:30px;
-padding:15px 35px;
+margin-top:35px;
+
+padding:16px 40px;
+
 background:white;
 color:#061426;
-border-radius:30px;
+
+border-radius:40px;
+
 font-weight:bold;
+
 }
 
 
 section{
-padding:70px 8%;
+
+padding:75px 8%;
+
 }
 
 
-h2{
+.title{
+
 text-align:center;
-font-size:36px;
+font-size:38px;
 margin-bottom:40px;
+
 }
 
 
 .cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
+
 }
 
 
 .card{
+
 background:#0d213b;
-padding:30px;
+padding:35px 25px;
 border-radius:20px;
+
 }
 
 
 .card h3{
+
 font-size:25px;
 margin-bottom:15px;
+
 }
 
 
 .price{
-font-size:30px;
+
+font-size:32px;
 font-weight:bold;
+
 margin-bottom:15px;
+
 }
 
 
 .card li{
+
 list-style:none;
 margin:8px 0;
+
 }
 
 
 .info{
+
 text-align:center;
+max-width:850px;
+margin:35px auto;
 color:#ddd;
-margin-top:30px;
+
 }
 
 
+/* PROSESS */
+
+.steps{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+
+.step{
+
+background:#0d213b;
+padding:30px;
+border-radius:20px;
+
+}
+
+
+.step h3{
+
+margin-bottom:15px;
+font-size:23px;
+
+}
+
+
+
+/* GALLERI */
+
+
 .gallery{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+
 }
 
 
 .gallery img{
+
 width:100%;
 height:250px;
 object-fit:cover;
 border-radius:20px;
+
 }
 
 
+
+/* FØR ETTER */
+
+
 .before{
+
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:20px;
+
 }
 
 
 .before div{
+
 height:300px;
 background:#0d213b;
+
 border-radius:20px;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 color:#aaa;
+
 }
 
 
+
+/* SKJEMA */
+
+
 .box{
+
 background:#0d213b;
 padding:30px;
+
 border-radius:20px;
+
 max-width:700px;
 margin:auto;
+
 }
 
 
 input,textarea,select{
+
 width:100%;
 padding:15px;
+
 margin:10px 0;
+
 border-radius:10px;
-border:0;
+
+border:none;
+
 }
+
 
 
 button{
+
 padding:15px 30px;
-border:0;
+
+border:none;
+
 border-radius:30px;
+
 background:white;
-font-weight:bold;
+
 color:#061426;
+
+font-weight:bold;
+
 }
 
 
+/* STJERNER */
+
+
+.stars{
+
+display:flex;
+flex-direction:row-reverse;
+justify-content:center;
+
+}
+
+
+.stars input{
+
+display:none;
+
+}
+
+
+.stars label{
+
+font-size:40px;
+color:#555;
+cursor:pointer;
+
+}
+
+
+.stars input:checked ~ label{
+
+color:white;
+
+}
+
+
+
 footer{
+
 background:#030b16;
-text-align:center;
+
 padding:40px;
+
+text-align:center;
+
+}
+
+
+.contact a{
+
+display:inline-block;
+
+margin:10px;
+
+background:white;
+
+color:#061426;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+font-weight:bold;
+
 }
 
 
 @media(max-width:700px){
 
 .hero h1{
-font-size:38px;
+
+font-size:40px;
+
 }
 
 .before{
+
 grid-template-columns:1fr;
+
 }
 
 }
+
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -212,7 +382,7 @@ grid-template-columns:1fr;
 
 <p>
 Profesjonell bilpleie i Holmestrand.
-Vi gir bilen din en grundig vask med fokus på kvalitet og detaljer.
+Vi gir bilen din en grundig behandling med fokus på kvalitet, detaljer og et skinnende resultat.
 </p>
 
 <a href="#bestill" class="btn">
@@ -224,10 +394,9 @@ Bestill bilvask
 </section>
 
 
-
 <section>
 
-<h2>
+<h2 class="title">
 Våre tjenester
 </h2>
 
@@ -244,15 +413,16 @@ Fra 200 kr
 </div>
 
 <ul>
-<li>✓ Forvask</li>
+
+<li>✓ Grundig forvask</li>
 <li>✓ Skumkanon</li>
 <li>✓ Håndvask</li>
 <li>✓ Felgrens</li>
-<li>✓ Mikrofibertørking</li>
+<li>✓ Tørking med mikrofiber</li>
+
 </ul>
 
 </div>
-
 
 
 <div class="card">
@@ -264,14 +434,15 @@ Fra 400 kr
 </div>
 
 <ul>
+
 <li>✓ Støvsuging</li>
 <li>✓ Rengjøring av overflater</li>
 <li>✓ Vindusvask</li>
 <li>✓ Detaljrengjøring</li>
+
 </ul>
 
 </div>
-
 
 
 <div class="card">
@@ -283,9 +454,11 @@ Fra 600 kr
 </div>
 
 <ul>
+
 <li>✓ Utvendig + innvendig</li>
 <li>✓ Grundig behandling</li>
-<li>✓ Ca. 3 timer arbeid</li>
+<li>✓ Vanligvis ca. 3 timer</li>
+
 </ul>
 
 </div>
@@ -295,16 +468,56 @@ Fra 600 kr
 
 
 <p class="info">
-Alle priser er veiledende. Pris kan variere etter bilens størrelse og tilstand.
+
+Alle priser er veiledende.
+Prisen kan variere etter bilens størrelse og tilstand.
+
 </p>
 
 
 </section>
 <section>
 
-<h2>
-Bildegalleri
-</h2>
+<h2 class="title">Prosessen vår</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Bestilling</h3>
+<p>
+Du sender inn bestillingsskjemaet eller tar kontakt med oss. Deretter avtaler vi en dag og et tidspunkt som passer for begge.
+</p>
+</div>
+
+<div class="step">
+<h3>2. Gjennomgang</h3>
+<p>
+Når vi kommer ser vi over bilen og vurderer hvilken behandling som passer best ut fra størrelse, tilstand og hvor skitten bilen er.
+</p>
+</div>
+
+<div class="step">
+<h3>3. Bilpleie</h3>
+<p>
+Vi starter med en grundig utvendig vask med forvask, skumkanon, håndvask og felgrens. Ved innvendig vask støvsuger vi bilen, rengjør overflater, vinduer og detaljer.
+</p>
+</div>
+
+<div class="step">
+<h3>4. Ferdig resultat</h3>
+<p>
+Når vi er ferdige går vi over bilen en siste gang for å sikre et rent og pent resultat. Komplett bilpleie tar vanligvis rundt 3 timer, men tiden kan variere.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="title">Bildegalleri</h2>
 
 <div class="gallery">
 
@@ -319,166 +532,140 @@ Bildegalleri
 </section>
 
 
-
 <section>
 
-<h2>
-Før / Etter
-</h2>
-
+<h2 class="title">Før / Etter</h2>
 
 <div class="before">
 
 <div>
-Før-bilde
+Legg inn eget før-bilde
 </div>
-
 
 <div>
-Etter-bilde
+Legg inn eget etter-bilde
 </div>
 
 </div>
-
 
 </section>
-
-
 
 
 <section>
 
-<h2>
-Kundeanmeldelser
-</h2>
-
+<h2 class="title">Kundeanmeldelser</h2>
 
 <div class="box">
 
-<p style="text-align:center;color:#ddd;margin-bottom:20px;">
-Her kan kunder legge igjen ekte anmeldelser senere.
+<p style="text-align:center;margin-bottom:20px;">
+Har du brukt K&B Bilpleie? Vi setter stor pris på en anmeldelse.
 </p>
 
+<div class="stars">
 
-<input placeholder="Navn">
+<input type="radio" id="star5" name="rating">
+<label for="star5">★</label>
 
+<input type="radio" id="star4" name="rating">
+<label for="star4">★</label>
 
-<textarea placeholder="Din anmeldelse"></textarea>
+<input type="radio" id="star3" name="rating">
+<label for="star3">★</label>
 
+<input type="radio" id="star2" name="rating">
+<label for="star2">★</label>
 
-<button type="button">
-Send inn
-</button>
-
+<input type="radio" id="star1" name="rating">
+<label for="star1">★</label>
 
 </div>
 
+<input placeholder="Navn">
+
+<textarea placeholder="Skriv anmeldelsen din"></textarea>
+
+<button type="button">
+Send anmeldelse
+</button>
+
+</div>
 
 </section>
 
 
-
-
 <section id="bestill">
 
-
-<h2>
-Bestill bilvask
-</h2>
-
+<h2 class="title">Bestill bilvask</h2>
 
 <div class="box">
 
-
 <form action="https://formspree.io/f/mzdnnaeb" method="POST">
 
-
-<input 
+<input
 name="navn"
 placeholder="Navn"
-required
->
+required>
 
-
-<input 
+<input
 name="telefon"
 placeholder="Telefonnummer"
->
+required>
 
-
-<input 
+<input
+type="email"
 name="epost"
-placeholder="E-post"
->
-
+placeholder="E-post">
 
 <select name="tjeneste">
 
-<option>
-Velg tjeneste
-</option>
-
-<option>
-Utvendig vask - fra 200 kr
-</option>
-
-<option>
-Innvendig vask - fra 400 kr
-</option>
-
-<option>
-Komplett bilpleie - fra 600 kr
-</option>
-
+<option>Velg tjeneste</option>
+<option>Utvendig vask</option>
+<option>Innvendig vask</option>
+<option>Komplett bilpleie</option>
+<option>Annet</option>
 
 </select>
 
-
-<textarea 
+<textarea
 name="melding"
-placeholder="Melding">
-</textarea>
-
+placeholder="Fortell litt om bilen og hva du ønsker hjelp med"></textarea>
 
 <button type="submit">
 Send forespørsel
 </button>
 
-
 </form>
 
-
 </div>
-
 
 </section>
 
 
-
-
 <footer>
 
-
-<h2>
-K&B Bilpleie
-</h2>
-
+<h2>K&B Bilpleie</h2>
 
 <p>
 Profesjonell bilpleie i Holmestrand
 </p>
 
+<div class="contact">
 
-<p>
-📞 Telefon: Kommer snart
-<br>
-✉️ E-post: Kommer snart
+<a href="tel:97336146">
+📞 973 36 146
+</a>
+
+<a href="mailto:kasperocoonor@gmail.com">
+✉️ kasperocoonor@gmail.com
+</a>
+
+</div>
+
+<p style="margin-top:20px;color:#bbb;">
+© 2026 K&B Bilpleie. Alle rettigheter reservert.
 </p>
-
 
 </footer>
 
-
 </body>
-
 </html>
